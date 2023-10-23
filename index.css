@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  z-index: 99;
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left h1 {
+  margin-left: 40px;
+  font-size: 40px;
+  font-weight: 800;
+  transform: scale(-1, -1);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right ul {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.right ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.right ul li:hover hr {
+  width: 100%;
+}
+
+.right ul li hr {
+  width: 0px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: black;
+  border: none;
+  transition: all 0.7s ease-in;
+}
+.right .search {
+  margin-right: 20px;
+}
+
+.right .search i {
+  font-size: 25px;
+}
+
+.header {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 0, 0, 0.527),
+      rgba(0, 0, 255, 0.565)
+    ),
+    url("images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header .text {
+  color: white;
+  width: 30%;
+  margin-left: 100px;
+}
+
+.header .text h2 {
+  width: 300px;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.section3 {
+  width: 100%;
+  height: 450px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.89),
+      rgba(0, 0, 0, 0.768)
+    ),
+    url("images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 .container {
+  width: 85%;
+  height: 250px;
+  color: white;
+}
+
+.section3 .container h3 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section3 .container p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.section3 .container hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  border: none;
+}
+
+.section3 .container .brands {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section3 .container .brands p {
+  font-size: 24px;
+}
+
+.section3 .container .brands p:nth-child(1) {
+  font-family: "Barriecito", cursive;
+}
+.section3 .container .brands p:nth-child(2) {
+  font-family: "Caprasimo", cursive;
+}
+.section3 .container .brands p:nth-child(3) {
+  font-family: "Caveat", cursive;
+}
+.section3 .container .brands p:nth-child(4) {
+  font-family: "Cinzel Decorative", cursive;
+}
+.section3 .container .brands p:nth-child(5) {
+  font-family: "Abyssinica SIL", serif;
+}
+.section3 .container .brands p:nth-child(6) {
+  font-family: "Caesar Dressing", cursive;
+}
+
+.section4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4 .container {
+  width: 85%;
+  margin-top: 80px;
+}
+
+.section4 .container h3 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.section4 .container hr {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+.stories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stories .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.stories .row .story {
+  width: 48%;
+}
+
+.stories .row .story .img-container {
+  width: 100%;
+  height: 350px;
+}
+
+.stories .row .story .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.stories .row .story h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.stories .row .story p {
+  margin-bottom: 10px;
+  color: #7e7e7e;
+}
+
+.banner {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #007bff,
+    rgba(74, 249, 244, 0.768)
+  );
+}
+
+.banner .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .text p {
+  color: white;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.banner .text a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+}
